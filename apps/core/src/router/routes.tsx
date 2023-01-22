@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import { ContactPage, ErrorPage } from "../pages";
 import SignUp from "../pages/onboarding/SignUp";
+import VerifyEmail from "../pages/onboarding/VerifyEmail";
 
 const router = createBrowserRouter([
   {
@@ -17,12 +18,16 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <ContactPage />
       },
-      {
-        path: "/signup",
-        element: <SignUp />
-      }
     ]
-  }
+  },
+  {
+    path: "/signup",
+    element: <SignUp />
+  },
+  {
+    path: "/verify-email",
+    element: <VerifyEmail />
+  },
 ]);
 
 export default router;
